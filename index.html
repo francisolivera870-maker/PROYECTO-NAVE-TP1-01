@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Cobra y recibi todos los pagos al instante</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+
+            <div class="menu-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1 6C1 5.30964 1.55964 4.75 2.25 4.75H21.75C22.4404 4.75 23 5.30964 23 6C23 6.69036 22.4404 7.25 21.75 7.25H2.25C1.55964 7.25 1 6.69036 1 6Z"
+                        fill="#333333"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1 12C1 11.3096 1.55964 10.75 2.25 10.75H21.75C22.4404 10.75 23 11.3096 23 12C23 12.6904 22.4404 13.25 21.75 13.25H2.25C1.55964 13.25 1 12.6904 1 12Z"
+                        fill="#333333"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1 18C1 17.3096 1.55964 16.75 2.25 16.75H21.75C22.4404 16.75 23 17.3096 23 18C23 18.6904 22.4404 19.25 21.75 19.25H2.25C1.55964 19.25 1 18.6904 1 18Z"
+                        fill="#333333"></path>
+                </svg>
+            </div>
+
+            <img class="logo" src="logos/Logo Nave.jpg">
+
+            <nav class="nav-desktop">
+                <a href="#" class="nav-link nav-link--active">Cobros</a>
+                <a href="#" class="nav-link">Beneficios</a>
+                <div class="nav-divider"></div>
+            </nav>
+            <!--Botones Desktop-->
+            <div class="nav-buttons">
+                <a href="#" class="btn-espacio-nave">Espacio Nave</a>
+                <a href="#" class="btn-entrar-nave">Entrar a Nave</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <!--HERO: EN MOBILE; IMAGEN ARRIBA + TEXTO ABAJO
+        HERO: EN DESKTOP; TODO ADENTRO DEL BANNER-->
+        <div class="hero">
+            <div class="hero-imagen-wrapper">
+                <img class="imagen-banner" src="./logos/Bannner-hero-tu-negocio-vuela.png"
+                    alt="tu negocio vuela con Nave">
+                <!--TEXTO SOLO VISIBLE EN DESKTOP-->
+                <div class="hero-overlay-text">
+                    <h1>Cobrás con Nave, tu negocio vuela</h1>
+                    <span>Un ecosistema que acompaña desde el despegue, hasta el vuelo y el aterrizaje seguro.</span>
+                </div>
+            </div>
+
+            <!-- TEXTO SOLO VISIBLE EN MOBILE-->
+            <div class="primarymodule-text">
+                <h1>Cobrás con Nave, tu negocio vuela</h1>
+                <span>Un ecosistema que acompaña desde el despegue, hasta el vuelo y el aterrizaje seguro.</span>
+            </div>
+        </div>
+
+        <!-- CONTROLES CARRUSEL-->
+        <div class="carrusel-controles">
+            <span class="carrusel-flecha">&#8249;</span>
+            <div class="carrusel-puntitos">
+                <span class="puntito activo"></span>
+                <span class="puntito"></span>
+            </div>
+            <span class="carrusel-flecha">&#8250;</span>
+        </div>
+
+        <!-- SECCION DE BIENVENIDA CON TARJETAS-->
+        <section class="seccion-bienvenida">
+            <h2>Te damos la bienvenida al vuelo de tu negocio</h2>
+
+            <!--TARJETA WRAPPER: NECESARIO PARA EL GRID-->
+            <div class="cards-wrapper">
+
+                <!--TARJETA 1-->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 5L5 19M9 6.5C9 7.88071 7.88071 9 6.5 9C5.11929 9 4 7.88071 4 6.5C4 5.11929 5.11929 4 6.5 4C7.88071 4 9 5.11929 9 6.5ZM20 17.5C20 18.8807 18.8807 20 17.5 20C16.1193 20 15 18.8807 15 17.5C15 16.1193 16.1193 15 17.5 15C18.8807 15 20 16.1193 20 17.5Z"
+                                stroke="#6B3FC8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Viajá liviano de comisiones</h3>
+                    <p class="card-description">Vos elegís cuando acreditar la plata de tus ventas, siempre con
+                        comisiones
+                        bajas.</p>
+                </div>
+
+                <!--TARJETA 2-->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 12V6.5C20 5.11929 18.8807 4 17.5 4H6.5C5.11929 4 4 5.11929 4 6.5V12M20 12H4M20 12V17.5C20 18.8807 18.8807 20 17.5 20H6.5C5.11929 20 4 18.8807 4 17.5V12M9 16H9.01M12 16H12.01M15 16H15.01"
+                                stroke="#6B3FC8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Promociones que se adaptan a vos</h3>
+                    <p class="card-description">Activá combos, cuotas o beneficios cuándo y cómo quieras, según lo que
+                        tu
+                        negocio necesite.</p>
+                </div>
+
+                <!--TARJETA 3 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 19V13M12 19V9M15 19V15M4 6H20M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6M4 6V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V6"
+                                stroke="#6B3FC8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Todo el control desde la cabina</h3>
+                    <p class="card-description">Centralizás la información clave en un solo lugar, con acceso en tiempo
+                        real
+                        para vos y tu equipo.</p>
+                </div>
+
+                <!--CIERRE DE TARJETA WRAPPER-->
+            </div>
+
+            <!-- CAJA ESPECIAL-->
+            <div class="box-especial">
+                <div class="box-especial-text">
+                    <h2>Historias que vuelan</h2>
+                    <p>Conocé a los comercios que eligen Nave todos los días 💜</p>
+                </div>
+                <a class="btn-link" href="#">Conocer más ›</a>
+            </div>
+        </section>
+
+        <!--TEXTO H2-->
+        <div class="module-heading">
+            <h2>Cobrá donde querés, donde querés.</h2>
+        </div>
+
+        <!--IMAGEN PAGOS-->
+        <div class="imagenespagos">
+            <div class="imagenespagos-one">
+                <img src="./logos/Galicia-Mobile-PNG.png" alt="Cobro por QR con Nave">
+                <div class="button-mas">
+                    <h2>QR</h2>
+                    <p>Simple e interoperable, cobrás con dinero en cuenta o tarjeta, desde cualquier billetera desde tu
+                        mostrador, web, factura o punto de venta.</p>
+                    <a class="btn-mas" href="#">Conocer más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagenespagos">
+            <div class="imagenespagos-two">
+                <img src="./logos/Galicia-Mobile-PNG (1).png" alt="Terminal Nave Point">
+                <div class="button-mas">
+                    <h2>Terminal Nave Point</h2>
+                    <p>Aceptá pagos con tarjetas (contactless, con tecnología NFC) o QR y resolvé cada venta con
+                        autonomía, estés donde estés.</p>
+                    <a class="btn-mas" href="#">Conocer más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagenespagos">
+            <div class="imagenespagos-three">
+                <img src="./logos/Galicia-Mobile-PNG (2).png" alt="Link de pago Nave">
+                <div class="button-mas">
+                    <h2>Link de pago</h2>
+                    <p>Generá links de pago y compartilos al instante desde cualquier canal.</p>
+                    <a class="btn-mas" href="#">Conocer más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagenespagos">
+            <div class="imagenespagos-four">
+                <img src="./logos/Galicia-Mobile-PNG (3).png" alt="Tienda online Nave">
+                <div class="button-mas">
+                    <h2>Tienda online</h2>
+                    <p>Tu negocio ofrece una experiencia de cobro ágil, con un checkout seguro y sin
+                        turbulencias, para que tus ventas despeguen online.</p>
+                    <a class="btn-mas" href="#">Conocer más</a>
+                </div>
+            </div>
+        </div>
+
+        <!--SEPARADOR-->
+        <div class="separador"></div>
+
+        <div class="module-heading">
+            <h2>Aceptás pagos con tarjetas y QR</h2>
+        </div>
+
+        <div class="separador"></div>
+
+        <div class="bancos">
+            <img class="bancosimg" src="./logos/Galicia-Mobile.jpeg" alt="Bancos y medios de pago aceptados">
+        </div>
+
+        <div class="separador"></div>
+        <!---->
+        <!-- Sección acreditación -->
+        <section>
+            <div class="module-heading">
+                <h2>¡Vos elegís cuando acreditar tus ventas!</h2>
+            </div>
+
+            <div class="separador"></div>
+            <!---->
+            <!-- CAJA ESPECIAL 2-->
+            <div class="boxespecial">
+                <div class="box-especial-text">
+                    <h2>Conocé las comisiones por cobro</h2>
+                    <p>Simulá una venta y descubrí cuánto vas a cobrar.</p>
+                </div>
+                <a class="btn-conocer-mas" href="#">Conocer comisiones</a>
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="module-heading">
+                <h2>Descubrí todo lo que podés hacer con Nave</h2>
+            </div>
+
+            <div class="separador-"></div>
+
+            <div class="module-heading">
+                <h2>Preguntas frecuentes</h2>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-inner">
+            <img src="./logos/LogoNave-Mobile.jpg" class="logo1" alt="Logo Nave">
+
+            <div class="footer-grid">
+
+                <!--NAVE-->
+                <div class="linkList">
+                    <span class="linkList_title">Nave</span>
+                    <ul>
+                        <li><a href="#">Cobrá con Nave</a></li>
+                        <li><a href="#">Entrar a Nave</a></li>
+                        <li><a href="#">Abrir cuenta en Galicia</a></li>
+                        <li><a href="#">Comisiones</a></li>
+                    </ul>
+                </div>
+
+                <!--COBROS -->
+                <div class="linkList">
+                    <span class="linkList_title">Cobros</span>
+                    <ul>
+                        <li><a href="#">QR</a></li>
+                        <li><a href="#">Cobros online</a></li>
+                        <li><a href="#">Link de pago</a></li>
+                        <li><a href="#">Nave Point</a></li>
+                        <li><a href="#">Integraciones</a></li>
+                        <li><a href="#">Nave Developers</a></li>
+                    </ul>
+                </div>
+
+                <!-- BENEFICIOSS-->
+                <div class="linkList">
+                    <span class="linkList_title">Beneficios</span>
+                    <ul>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Plan Simple</a></li>
+                    </ul>
+                </div>
+
+                <!-- TE PUEDE INTERESAR -->
+                <div class="linkList">
+                    <span class="linkList_title">Te puede interesar</span>
+                    <ul>
+                        <li><a href="#">Galicia</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

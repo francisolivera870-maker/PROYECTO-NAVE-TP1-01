@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*==========================================
+RESET 
+=============================================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: rgb(252, 251, 255);
+}
+
+/*==============================
+HEADER 
+================================*/
+.header-content {
+    align-items: center;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 72px;
+}
+
+.menu-btn {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*=============================
+NAV DESKTOP
+===============================*/
+.nav-desktop {
+    display: none;
+}
+
+/*BOTONES DESKTOP*/
+.nav-buttons {
+    display: none;
+}
+
+/*============================
+HERO MOBILE
+==============================*/
+.hero-imagen-wrapper {
+    position: relative;
+}
+
+.imagen-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*============================
+TEXTO MOBILE (ABAJO)
+==============================*/
+/* H1*/
+.primarymodule-text {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 24px;
+}
+
+.primarymodule-text h1 {
+    font-size: 28.9px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.primarymodule-text span {
+    color: rgb(57, 19, 118);
+    font-size: 19px;
+    text-align: center;
+}
+
+/*=============================
+CARRUSEL
+=============================== */
+.carrusel {
+    margin: 16px 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.carrusel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carrusel-texto {
+    padding: 24px 20px 8px;
+    text-align: center;
+}
+
+.carrusel-texto h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.carrusel-texto p {
+    font-size: 15px;
+    color: #6B3FC8;
+    line-height: 1.6;
+}
+
+.carrusel-controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+}
+
+.carrusel-flecha {
+    font-size: 28px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.carrusel-puntitos {
+    display: flex;
+    gap: 8px;
+}
+
+.puntito {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+
+.puntito.activo {
+    background-color: #6B3FC8;
+}
+
+/*===============================
+SECCIÓN BIENVENIDA 
+=================================*/
+.seccion-bienvenida {
+    background-color: #fcfbff;
+    padding: 32px 20px;
+}
+
+.seccion-bienvenida>h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 1.3;
+    padding: 0 0 32px 0;
+}
+
+/*====================================
+TARJETA WRAPPER; MOBILE COLUMNA SIMPLE
+======================================*/
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* CARDS */
+.card {
+    background-color: #ffffff;
+    padding: 20px 16px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: #ede5ff;
+    border-radius: 14px;
+    margin-bottom: 16px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.card-description {
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/*=========================================
+CAJAS ESPECIAL
+===========================================*/
+.box-especial {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: rgb(54, 12, 114);
+    padding: 28px 24px;
+    margin: 24px 20px;
+    background-color: rgb(226, 210, 255);
+    border-radius: 32px;
+}
+
+.boxespecial {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: white;
+    padding: 28px 24px;
+    margin: 24px 20px;
+    background-color: rgb(138, 80, 247);
+    border-radius: 32px;
+}
+
+.box-especial h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    color: #360c72;
+    padding: 0;
+}
+
+.box-especial p {
+    color: #360c72;
+    font-size: 15px;
+    padding: 6px 0 0 0;
+    line-height: 1.5;
+}
+
+/*=============================
+BTN-CONOCER-MAS y BTN-MAS
+===============================*/
+.btn-conocer-mas {
+    display: inline-block;
+    background-color: white;
+    color: #360c72;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-conocer-mas:hover {
+    background-color: #f0e8ff;
+}
+
+/*================================
+BTN conocer mas en cards de pago
+==================================*/
+.btn-mas {
+    display: inline-block;
+    background-color: white;
+    color: #360c72;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-top: 12px;
+}
+
+/*===============================
+BTN HOVER agregado
+=================================*/
+.btn-mas:hover {
+    background-color: #f0e8ff;
+}
+
+/*================================================
+EDICION BTN LINK "CONOCER MAS"
+==================================================*/
+.btn-link {
+    color: #360c72;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/*==============================
+Imagenes QR
+================================*/
+.imagenespagos {
+    padding: 0 20px;
+    margin: 16px;
+}
+
+.imagenespagos-one,
+.imagenespagos-two,
+.imagenespagos-three,
+.imagenespagos-four {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px 16px;
+    overflow: hidden;
+}
+
+.imagenespagos img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.imagenespagos h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.imagenespagos p {
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/*===============================
+BANCOS
+=================================*/
+.bancos img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*===============================
+MODULE HEADING
+=================================*/
+.module-heading {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 24px 20px;
+}
+
+/*===============================
+Separadores
+=================================*/
+.separador {
+    padding: 8px;
+    margin: 0;
+}
+
+/*===============================
+FOOTER 
+=================================*/
+footer {
+    background-color: white;
+    padding: 32px 20px;
+    margin-top: 24px;
+}
+
+.logo1 {
+    width: 46px;
+    height: auto;
+    margin: 0 auto 24px;
+    display: block;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.linkList_title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.linkList ul {
+    list-style: none;
+}
+
+.linkList ul li {
+    margin-bottom: 8px;
+}
+
+.linkList ul li a {
+    font-size: 14px;
+    color: #555555;
+    text-decoration: none;
+}
+
+.hero-overlay-text {
+    display: none;
+}
+/* ================================================
+DESKTOP — 1024px
+   ================================================ */
+@media (min-width: 1024px) {
+
+    /* Menú oculto en desktop */
+    .menu-btn {
+        display: none;
+    }
+
+    /* Header en fila con nav y botones */
+    .header-content {
+        justify-content: space-between;
+        padding: 0 60px;
+        min-height: 80px;
+    }
+
+    /* Nav desktop visible */
+    .nav-desktop {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 32px;
+        flex: 1;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        font-weight: 500;
+        color: #333333;
+        text-decoration: none;
+        padding: 6px 16px;
+        border-radius: 50px;
+        transition: background-color 0.2s;
+    }
+
+    .nav-link:hover {
+        background-color: #f0e8ff;
+        color: #6B3FC8;
+    }
+
+    /* Link activo con fondo lila claro */
+    .nav-link--active {
+        background-color: #f0e8ff;
+        color: #6B3FC8;
+        font-weight: 600;
+    }
+
+    .nav-divider {
+        width: 1px;
+        height: 24px;
+        background-color: #dddddd;
+        margin: 0 8px;
+    }
+
+/*====================================
+TEXTO DE TARJETAS DE PAGOS
+======================================*/
+.imagenespagos-one,
+.imagenespagos-two,
+.imagenespagos-three,
+.imagenespagos-four {
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-mas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+}
+/*===================================
+MOVIMIENTO HOVER
+======================================*/
+.imagenespagos img:hover {
+    transform: translateY(-8px);
+    transition: transform 0.5s ease;
+}
+
+/*=====================================
+Botones de header desktop visibles
+=======================================*/
+    .nav-buttons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .btn-espacio-nave {
+        font-size: 15px;
+        font-weight: 600;
+        color: #6B3FC8;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: 1.5px solid #6B3FC8;
+        transition: background-color 0.2s;
+    }
+
+    .btn-espacio-nave:hover {
+        background-color: #f0e8ff;
+    }
+
+    .btn-entrar-nave {
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: #6B3FC8;
+        border: 1.5px solid #6B3FC8;
+        transition: background-color 0.2s;
+    }
+
+    .btn-entrar-nave:hover {
+        background-color: #5a32a8;
+    }
+
+/*================================================
+Hero: imagen con más margen y el texto superpuesto
+==================================================*/
+    .hero-imagen-wrapper {
+        margin: 32px 60px;
+        border-radius: 28px;
+        position: relative;
+    }
+
+/*================================================
+Texto debajo de imagen oculto en desktop
+==================================================*/
+    .primarymodule-text {
+        display: none;
+    }
+
+/*================================================
+Overlay de texto visible en desktop
+==================================================*/
+    .hero-overlay-text {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 40px 48px;
+        max-width: 55%;
+    }
+
+    .hero-overlay-text h1 {
+        font-size: 36px;
+        font-weight: 800;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-overlay-text span {
+        font-size: 17px;
+        color: rgb(57, 19, 118);
+        line-height: 1.5;
+    }
+
+/*====================================================
+Contenedor centrado con ancho máximo
+======================================================*/
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Cards en 3 columnas */
+    .cards-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .seccion-bienvenida {
+        padding: 60px 80px;
+    }
+
+    .seccion-bienvenida>h2 {
+        font-size: 36px;
+    }
+
+.card:hover {
+    transform: translateY(-8px);
+    transition: transform 0.5s ease;
+}
+.card {
+    transition: transform 0.5s ease;
+}
+
+/*==================================================
+Caja especial en fila: texto izquierda, botón derecha
+====================================================*/
+    .box-especial,
+    .boxespecial {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 32px 0;
+    }
+
+    .imagenespagos {
+        padding: 0 80px;
+        margin: 24px auto;
+        max-width: 1200px;
+    }
+
+    .imagenespagos img {
+        width: 40%;
+    }
+
+    .no-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 48px 80px;
+    }
+
+    .module-heading h2 {
+        font-size: 32px;
+    }
+}
+
+/* ================================================
+WIVE — 1280px
+   ================================================ */
+@media (min-width: 1280px) {
+
+    main {
+        max-width: 1440px;
+    }
+
+    .hero-imagen-wrapper {
+        margin: 32px 80px;
+    }
+
+    .hero-overlay-text h1 {
+        font-size: 44px;
+    }
+
+    .header-content {
+        padding: 0 80px;
+    }
+
+    .imagenespagos {
+        padding: 0 120px;
+    }
+
+    .box-especial,
+    .boxespecial {
+        margin: 32px 0;
+    }
+}
